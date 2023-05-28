@@ -1,0 +1,11 @@
+sort1 uses: Bubble Sort
+
+How do you know?: When comparing the real time of the different sort files on the sorted50000.txt file sort1 has the smallest time. Which coincides with its Ω(n)
+
+sort2 uses: Merge Sort
+
+How do you know?: When looking at the time used on the random50000.txt file, sort2 uses the a considerable amount less time on the txt file than the others. Thus we can conclude that sort2 is merge sort becuase O(n log(n)), while the others are O(n^2)
+
+sort3 uses: Selection Sort
+
+How do you know?: Since its the last sort file possible. Process of elimination used.

@@ -1,19 +1,25 @@
 #include <stdio.h>
-#include <cs50.c>
+#include <cs50.h>
 #include <string.h>
 
-int main(void){
+int main(void)
+{
 
+    // Prompts the user for the card number and defines two other variables
     long long card = get_long_long("Number: ");
     long long l = card;
     int i = 0;
 
-    while (l > 1){
+    // Adds 1 to i for each digit of the card
+    while (l > 1)
+    {
         l /= 10;
         i++;
     }
 
-    if (i != 13 && i!= 15 && i != 16){
+    // Checks to see if the card is valid based on the length of it
+    if (i != 13 && i != 15 && i != 16)
+    {
         printf("INVALID\n");
         return 0;
     }
@@ -29,6 +35,7 @@ int main(void){
     int total = 0;
     long long x = card;
 
+    // Uses Luhn's algorithm to find out if the card is a valid AMEX, VISA, or Mastercard
     do
     {
         mod1 = x % 10;
@@ -36,18 +43,20 @@ int main(void){
         sum1 += mod1;
 
         mod2 = x % 10;
-        x /=10;
-        
+        x /= 10;
+
         mod2 *= 2;
         d1 = mod2 % 10;
         d2 = mod2 / 10;
         sum2 = sum2 + d1 + d2;
 
-    } while (x > 0);
-    
+    }
+    while (x > 0);
+
     total = sum1 + sum2;
 
-    if (total % 10 != 0){
+    if (total % 10 != 0)
+    {
         printf("INVALID\n");
         return 0;
     }
@@ -56,24 +65,29 @@ int main(void){
     do
     {
         start /= 10;
-    } while (start > 100);
-    
+    }
+    while (start > 100);
+
 
     // Print out what type of card it is based on the starting numbers
     // AMEX, 34 37
     // Mastercard 51-55
     // Visa 4
 
-    if ((start / 10 == 5) && (0 < start % 10 && start % 10 < 6)){
+    if ((start / 10 == 5) && (0 < start % 10 && start % 10 < 6))
+    {
         printf("MASTERCARD\n");
     }
-    else if ((start / 10 == 3) && (start % 10 == 4 || start % 10 == 7)){
+    else if ((start / 10 == 3) && (start % 10 == 4 || start % 10 == 7))
+    {
         printf("AMEX\n");
     }
-    else if (start / 10 == 4){
+    else if (start / 10 == 4)
+    {
         printf("VISA\n");
     }
-    else{
+    else
+    {
         printf("INVALID\n");
     }
 
