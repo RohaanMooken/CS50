@@ -1,0 +1,22 @@
+Times:
+
+10 simulations: 0m0.029s
+100 simulations: 0m0.028s
+1000 simulations: 0m0.036s
+10000 simulations: 0m0.099s
+100000 simulations: 0m0.799s
+1000000 simulations: 0m7.695s
+
+Questions:
+
+Which predictions, if any, proved incorrect as you increased the number of simulations?:
+
+All of the predictions were wrong seeing as every single on put belgium with 21.1% at the top, however, belgium came third
+while France who came first was predicted at 3.3%. And England who came third got a prediction of 2.8%
+
+Suppose you're charged a fee for each second of compute time your program uses.
+After how many simulations would you call the predictions "good enough"?:
+
+I would say 100000 simulations are is good enough seeing as its under 1 second as the predictions are fairly
+close to the ones outputed by the 1000000 simulations one. However, if the fee was super high i'd say 10000 not
+perfect enough scores, but close, and people are mostly interested in the top ones.
