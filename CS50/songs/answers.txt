@@ -1,0 +1,2 @@
+1. I Would characterize their audio aura based on all of the songs' genres in addition the the energy, valence and danceability
+2. I believe that adding more variables to the algortihm would better specify their audio aura, so I would add loudness, speechinesss, tempo and duration.
