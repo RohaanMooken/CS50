@@ -1,2 +1,1 @@
-# C
-Programming projects using the C programming language
+Folder contains projects/problemsets created during the cs50 online course
