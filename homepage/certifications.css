@@ -1,0 +1,31 @@
+:root {
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100:  #00ff04;
+    --color-primary-200:  #52ff40;
+    --color-primary-300:  #75ff5f;
+    --color-primary-400:  #8fff79;
+    --color-primary-500:  #a6ff90;
+    --color-primary-600:  #baffa7;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100:  #121212;
+    --color-surface-200:  #282828;
+    --color-surface-300:  #3f3f3f;
+    --color-surface-400:  #575757;
+    --color-surface-500:  #717171;
+    --color-surface-600:  #8b8b8b;
+}
+
+body {
+    background-color: var(--color-surface-100);
+}
+
+.container {
+    box-shadow: 2px 2px 5px 4px var(--color-primary-200);
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--color-surface-100);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
+}

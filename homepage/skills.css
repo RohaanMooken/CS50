@@ -1,0 +1,108 @@
+:root {
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100:  #00ff04;
+    --color-primary-200:  #52ff40;
+    --color-primary-300:  #75ff5f;
+    --color-primary-400:  #8fff79;
+    --color-primary-500:  #a6ff90;
+    --color-primary-600:  #baffa7;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100:  #121212;
+    --color-surface-200:  #282828;
+    --color-surface-300:  #3f3f3f;
+    --color-surface-400:  #575757;
+    --color-surface-500:  #717171;
+    --color-surface-600:  #8b8b8b;
+}
+
+body {
+    background-color: var(--color-surface-100);
+    font-family: monospace;
+    overflow-x: hidden;
+}
+
+.container {
+    box-shadow: 2px 2px 5px 4px var(--color-primary-200);
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--color-surface-100);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.pageName {
+    width: 70%;
+    color: white;
+}
+
+.buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    color: rgba(255, 255, 255, 0.8);
+    border-color: var(--color-primary-200);
+    border-width: 2px;
+    width: 50%;
+    height: 33.3333333%;
+}
+
+.btn:hover {
+    color: white;
+    border-color: var(--color-surface-100);
+    border-radius: 3px;
+}
+
+.card {
+    background-color: var(--color-surface-300);
+    color: white;
+}
+
+.card-text {
+    color: var(--color-surface-600);
+}
+
+.card-footer {
+    color: var(--color-surface-500);
+}
+
+h3 {
+    margin-left: 15px;
+    color: white;
+}
+
+.header5 {
+    margin: auto;
+    padding: 5px;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-color: var(--color-primary-500);
+    color: var(--color-surface-500);
+}
+
+.tainer {
+    /* box-shadow: 2px 2px 5px 4px var(--color-primary-200); */
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--color-surface-300);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
+    align-items: center;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-surface-500);
+}
+
+a:hover {
+    color: var(--color-surface-600);
+}

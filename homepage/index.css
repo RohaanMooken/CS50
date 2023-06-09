@@ -1,0 +1,91 @@
+:root {
+    /** CSS DARK THEME PRIMARY COLORS */
+    --color-primary-100:  #00ff04;
+    --color-primary-200:  #52ff40;
+    --color-primary-300:  #75ff5f;
+    --color-primary-400:  #8fff79;
+    --color-primary-500:  #a6ff90;
+    --color-primary-600:  #baffa7;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100:  #121212;
+    --color-surface-200:  #282828;
+    --color-surface-300:  #3f3f3f;
+    --color-surface-400:  #575757;
+    --color-surface-500:  #717171;
+    --color-surface-600:  #8b8b8b;
+}
+
+body {
+    background-color: var(--color-surface-100);
+}
+
+.headerTextOne {
+    font-family: monospace;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.headerTextTwo {
+    font-family: monospace;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.container {
+    box-shadow: 2px 2px 5px 4px var(--color-primary-200);
+    display: flex;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: var(--color-surface-100);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.name {
+    width: 50%;
+    color: white;
+}
+
+.buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    color: rgba(255, 255, 255, 0.8);
+    border-color: var(--color-primary-200);
+    border-width: 2px;
+    width: 50%;
+    height: 33.3333333%;
+}
+
+.btn:hover {
+    color: white;
+    border-color: var(--color-surface-100);
+    border-radius: 3px;
+}
+
+p {
+    color: white;
+    font-family: monospace;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.social {
+    text-decoration: none;
+    color: white;
+    margin-top: 11px;
+    margin-left: 5px;
+}
+
+.social:hover {
+    color: white;
+}
+
+.hack {
+    color: var(--color-primary-100);
+}
